@@ -4,7 +4,7 @@ class SlingShot{
             bodyA: bodyA,
             pointB: pointB,
             stiffness: 0.04,
-            length: 10
+            length: 6
         }
         this.sling1 = loadImage('sprites/sling1.png');
         this.sling2 = loadImage('sprites/sling2.png');
@@ -15,6 +15,7 @@ class SlingShot{
     }
     attach(body){
         this.sling.bodyA = body;
+       // bird.trajectory = [];
     }
     
     fly(){
